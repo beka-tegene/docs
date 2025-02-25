@@ -1,85 +1,82 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
-  "name": "Dashen Bank",
+  "theme": "mint",
+  "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#012169",
-    "light": "#8883FD",
-    "dark": "#012169"
+    "primary": "#16A34A",
+    "light": "#07C983",
+    "dark": "#15803D"
   },
-  "search": {
-    "prompt": "Search the Documentation ..."
-  },
-  "seo": {
-    "indexing": "all",
-    "metatags": {
-      "title": "Your Documentation",
-      "description": "Your Documentation"
-    }
-  },
-
   "favicon": "/favicon.svg",
   "navigation": {
-    "dropdowns": [
+    "tabs": [
       {
-        "dropdown": "Central Portal",
-        "description": "Lorem dustry's dummy dummy",
-        "icon": "arrows-to-dot",
+        "tab": "Guides",
         "groups": [
           {
             "group": "Get Started",
             "pages": [
-              "/",
-              "central-portal"
+              "introduction",
+              "quickstart",
+              "development"
             ]
           },
           {
-            "group": "Interactive Docs",
+            "group": "Essentials",
             "pages": [
-              "central-portal/advert",
-              "central-portal/branch-users",
-              "central-portal/branch-settings",
-              "central-portal/bulk-disable",
-              "central-portal/bulk-service-disable",
-              "central-portal/customer-feedback",
-              "central-portal/customers",
-              "central-portal/departments",
-              "central-portal/financial-institution",
-              "central-portal/logs",
-              "central-portal/mini-apps",
-              "central-portal/notifications",
-              "central-portal/permission-groups",
-              "central-portal/product-codes",
-              "central-portal/rule-engine",
-              "central-portal/transactions",
-              "central-portal/unlink-accounts"
+              "essentials/markdown",
+              "essentials/code",
+              "essentials/images",
+              "essentials/settings",
+              "essentials/navigation",
+              "essentials/reusable-snippets"
             ]
           }
         ]
       },
       {
-        "dropdown": "Branch Portal",
-        "description": "Lorem Standards",
-
-        "icon": "building",
-        "pages": ["branch-portal", "api-reference/post", "api-reference/delete"]
-      },
-      {
-        "dropdown": "Merchant Portal",
-        "description": "Lorem Caption needed",
-
-        "icon": "store",
-        "pages": [
-          "merchant-portal",
-          "api-reference/post",
-          "api-reference/delete"
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Documentation",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint Examples",
+            "pages": [
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete"
+            ]
+          }
         ]
       }
-    ]
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Documentation",
+          "href": "https://mintlify.com/docs",
+          "icon": "book-open-cover"
+        },
+        {
+          "anchor": "Community",
+          "href": "https://mintlify.com/community",
+          "icon": "slack"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://mintlify.com/blog",
+          "icon": "newspaper"
+        }
+      ]
+    }
   },
   "logo": {
-    "light": "/logo/dashen.png",
-    "dark": "/logo/dashen.png"
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
@@ -87,12 +84,17 @@
         "label": "Support",
         "href": "mailto:hi@mintlify.com"
       }
-    ]
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
   },
   "footer": {
     "socials": {
       "x": "https://x.com/mintlify",
-      "github": "https://github.com/v",
+      "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
   }
